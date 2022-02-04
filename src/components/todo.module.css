@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.taskCard {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 340px;
+  height: 260px;
+  min-width: 340px;
+  min-height: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+.taskCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardContent {
+  flex: 2;
+  overflow: hidden;
+}
+
+.cardTopBar {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.taskCard h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+}
+
+.taskCard p {
+  font-family: "Roboto", sans-serif;
+  color: rgb(135, 142, 147);
+}
+
+.bottomContent {
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+}
+
+.date {
+  margin-top: 1px;
+}
+
+.date,
+.priority {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(135, 142, 147);
+}
+
+.taskCard button {
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  outline: none;
+  color: rgb(135, 142, 147);
+  cursor: pointer;
+  margin-left: 5px;
+  transition: color 0.15s;
+}
+
+.taskCard button:hover {
+  color: rgb(184, 192, 199);
+}
+
+.taskCard button:focus-visible {
+  outline: 1px dotted #212121;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.taskCard button:active {
+  transition: none;
+  color: #d4d9dd;
+}
